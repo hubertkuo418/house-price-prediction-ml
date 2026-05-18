@@ -32,19 +32,19 @@ This project explores the Kaggle House Prices dataset and builds a baseline + im
 
 ### Target Distribution (Log Scale)
 
-![log](assets/Log Distribution.png)
+![log](assets/Log_Distribution.png)
 
 ---
 
 ### Target Distribution (Original)
 
-![saleprice](assets/SalePrice Distribution.png)
+![saleprice](assets/SalePrice_Distribution.png)
 
 ---
 
 ### Top Correlated Features
 
-![top](assets/Top Correlated Features.png)
+![top](assets/Top_Correlated_Features.png)
 
 ---
 

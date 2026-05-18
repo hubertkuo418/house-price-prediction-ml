@@ -1,10 +1,10 @@
-# 🏠 House Price Prediction (Machine Learning Project)
+# House Price Prediction (Machine Learning Project)
 
 A regression project for predicting house prices using feature engineering and linear + machine learning models.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project explores the Kaggle House Prices dataset and builds a baseline + improved regression pipeline using:
 
@@ -16,39 +16,39 @@ This project explores the Kaggle House Prices dataset and builds a baseline + im
 
 ---
 
-## 📊 Dataset Analysis
+## Dataset Analysis
 
-### 🐱 Categorical Feature Insight
+### Categorical Feature Insight
 
 ![cat](assets/cat.png)
 
 ---
 
-### 🔥 Correlation Heatmap
+### Correlation Heatmap
 
 ![corr](assets/corr.png)
 
 ---
 
-### 📈 Target Distribution (Log Scale)
+### Target Distribution (Log Scale)
 
 ![log](assets/Log Distribution.png)
 
 ---
 
-### 📉 Target Distribution (Original)
+### Target Distribution (Original)
 
 ![saleprice](assets/SalePrice Distribution.png)
 
 ---
 
-### ⭐ Top Correlated Features
+### Top Correlated Features
 
 ![top](assets/Top Correlated Features.png)
 
 ---
 
-## 🧠 Feature Engineering
+## Feature Engineering
 
 Key features used in the final model:
 
@@ -70,7 +70,7 @@ Key features used in the final model:
 
 ---
 
-## ⚙️ Model Pipeline
+## Model Pipeline
 
 - Missing value imputation (median / most frequent)
 - Standardization (StandardScaler)
@@ -79,7 +79,7 @@ Key features used in the final model:
 
 ---
 
-## 📉 Evaluation Metrics
+## Evaluation Metrics
 
 - RMSE: ~32000
 - MAE: ~20000
@@ -87,7 +87,7 @@ Key features used in the final model:
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 house-price-prediction-ml/
@@ -104,7 +104,7 @@ house-price-prediction-ml/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Install dependencies
 ```bash
@@ -124,7 +124,7 @@ python src/predict.py
 
 ---
 
-## 📌 Key Insight
+## Key Insight
 
 - OverallQual and GrLivArea are the strongest predictors
 - Model performance is stable with R² ≈ 0.83
@@ -132,13 +132,13 @@ python src/predict.py
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 HubertKuo
 
 ---
 
-## 📎 Notes
+## Notes
 
 This project is part of a machine learning portfolio for internship applications.
 

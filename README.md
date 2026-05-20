@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This project builds a complete ML regression pipeline using the Kaggle House Prices dataset.
 
@@ -20,7 +20,7 @@ Goal: build a **structured and reproducible ML pipeline**, not just a single reg
 
 ---
 
-## 📊 Data Insights
+## Data Insights
 
 ### Categorical Feature Analysis
 ![cat](assets/cat.png)
@@ -39,7 +39,7 @@ Goal: build a **structured and reproducible ML pipeline**, not just a single reg
 
 ---
 
-## 🧠 Feature Engineering
+## Feature Engineering
 
 Key predictive features:
 
@@ -57,7 +57,7 @@ Core idea: **transform raw housing data into structured predictive signals**
 
 ---
 
-## ⚙️ System Pipeline
+## System Pipeline
 
 ```
 Raw Data
@@ -81,14 +81,14 @@ Pipeline steps:
 
 ---
 
-## 🤖 Models
+## Models
 
 - Linear Regression (baseline)
 - Improved regression model
 
 ---
 
-## 📈 Results
+## Results
 
 - RMSE: ~32000
 - MAE: ~20000
@@ -101,7 +101,7 @@ Key insights:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 house-price-prediction/
@@ -125,7 +125,7 @@ house-price-prediction/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Install dependencies
 ```bash
@@ -144,7 +144,7 @@ python src/predict.py
 
 ---
 
-## 🧩 Key Concepts
+## Key Concepts
 
 - Feature engineering is more important than model complexity
 - Log transformation stabilizes target distribution
@@ -153,7 +153,7 @@ python src/predict.py
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Try XGBoost / LightGBM
 - Hyperparameter tuning (GridSearchCV)
@@ -163,7 +163,7 @@ python src/predict.py
 
 ---
 
-## 👤 Author
+## Author
 
 Built by: Hubert Kuo  
 Focus: Machine Learning / AI Systems

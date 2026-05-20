@@ -14,10 +14,8 @@ model = joblib.load("models/house_price_model.pkl")
 # =========================
 df = pd.read_csv("data/train.csv") 
 
-# target
 y_true = df["SalePrice"]
 
-# features（要跟 train.py 完全一致）
 features = [
     'OverallQual','GrLivArea','GarageCars','GarageArea','TotalBsmtSF',
     '1stFlrSF','FullBath','TotRmsAbvGrd','YearBuilt','YearRemodAdd',

@@ -1,144 +1,169 @@
-# House Price Prediction (Machine Learning Project)
+# House Price Prediction
 
-A regression project for predicting house prices using feature engineering and linear + machine learning models.
+> End-to-end regression system for predicting house prices using structured feature engineering and machine learning models.
 
 ---
 
-## Project Overview
+## 🚀 Overview
 
-This project explores the Kaggle House Prices dataset and builds a baseline + improved regression pipeline using:
+This project builds a complete ML regression pipeline using the Kaggle House Prices dataset.
+
+Key stages:
 
 - Data preprocessing
-- Feature selection
+- Feature engineering
 - Correlation analysis
-- Machine learning regression models
-- Model evaluation (RMSE / MAE / R²)
+- Model training
+- Evaluation
+
+Goal: build a **structured and reproducible ML pipeline**, not just a single regression model.
 
 ---
 
-## Dataset Analysis
+## 📊 Data Insights
 
-### Categorical Feature Insight
-
+### Categorical Feature Analysis
 ![cat](assets/cat.png)
 
----
-
-### Correlation Heatmap
-
+### Feature Correlation Heatmap
 ![corr](assets/corr.png)
 
----
-
 ### Target Distribution (Log Scale)
-
 ![log](assets/Log_Distribution.png)
 
----
-
 ### Target Distribution (Original)
-
 ![saleprice](assets/SalePrice_Distribution.png)
 
----
-
 ### Top Correlated Features
-
 ![top](assets/Top_Correlated_Features.png)
 
 ---
 
-## Feature Engineering
+## 🧠 Feature Engineering
 
-Key features used in the final model:
+Key predictive features:
 
-- OverallQual
-- GrLivArea
-- GarageCars
-- GarageArea
+- OverallQual (material quality)
+- GrLivArea (living area)
+- GarageCars / GarageArea
 - TotalBsmtSF
-- 1stFlrSF
+- First Floor Area
 - FullBath
-- TotRmsAbvGrd
-- YearBuilt
-- YearRemodAdd
-- MSZoning
-- Neighborhood
-- HouseStyle
-- Exterior1st
-- KitchenQual
+- Total Rooms
+- YearBuilt / YearRemodAdd
+- Categorical encoding (Neighborhood, MSZoning)
+
+Core idea: **transform raw housing data into structured predictive signals**
 
 ---
 
-## Model Pipeline
+## ⚙️ System Pipeline
 
-- Missing value imputation (median / most frequent)
-- Standardization (StandardScaler)
-- One-hot encoding for categorical features
-- Linear Regression / baseline model
+```
+Raw Data
+   ↓
+Data Cleaning
+   ↓
+Feature Engineering
+   ↓
+Encoding & Scaling
+   ↓
+Model Training
+   ↓
+Evaluation
+```
+
+Pipeline steps:
+- Missing value imputation (median / mode)
+- One-hot encoding
+- Feature scaling (StandardScaler)
+- Regression modeling
 
 ---
 
-## Evaluation Metrics
+## 🤖 Models
+
+- Linear Regression (baseline)
+- Improved regression model
+
+---
+
+## 📈 Results
 
 - RMSE: ~32000
 - MAE: ~20000
-- R²: ~0.83
+- R² Score: ~0.83
+
+Key insights:
+- Log transform improves prediction stability
+- Feature engineering > model complexity
+- Strong correlation features dominate prediction
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-house-price-prediction-ml/
+house-price-prediction/
+│
 ├── data/
 ├── models/
 ├── assets/
+│   ├── cat.png
+│   ├── corr.png
+│   ├── Log_Distribution.png
+│   ├── SalePrice_Distribution.png
+│   └── Top_Correlated_Features.png
+│
 ├── src/
 │   ├── train.py
 │   ├── predict.py
-│   ├── evaluate.py
-├── notebooks/
+│   └── evaluate.py
+│
 └── README.md
 ```
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
-### 1. Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Train model
+### Train model
 ```bash
 python src/train.py
 ```
 
-### 3. Run prediction
+### Run inference
 ```bash
 python src/predict.py
 ```
 
+---
+
+## 🧩 Key Concepts
+
+- Feature engineering is more important than model complexity
+- Log transformation stabilizes target distribution
+- Correlation analysis guides feature selection
+- Structured pipeline improves reproducibility
 
 ---
 
-## Key Insight
+## 🔮 Future Work
 
-- OverallQual and GrLivArea are the strongest predictors
-- Model performance is stable with R² ≈ 0.83
-- Log transformation improves distribution stability
-
----
-
-##  Author
-
-HubertKuo
+- Try XGBoost / LightGBM
+- Hyperparameter tuning (GridSearchCV)
+- Automated feature selection
+- Web deployment (Streamlit dashboard)
+- Model comparison system
 
 ---
 
-## Notes
+## 👤 Author
 
-This project is part of a machine learning portfolio for internship applications.
-
+Built by: Hubert Kuo  
+Focus: Machine Learning / AI Systems
